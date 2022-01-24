@@ -56,7 +56,7 @@ translate([0,0,20]){
     $fn=150;
     rotate([0,90,0])
     difference(){
-      color("red")cylinder(h=6,d=14);
+      color("red")cylinder(h=4,d=14);
       translate([0,0,-1]) {
         color("blue")cylinder(h=8, d=9);
       }
