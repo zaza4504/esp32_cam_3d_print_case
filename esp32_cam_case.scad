@@ -3,7 +3,7 @@
 // 2022.01.21
 
 // esp32 cam module size
-width = 18;
+width = 21;
 heigtht = 30;
 depth = 40;
 // case thickness
