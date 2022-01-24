@@ -33,6 +33,10 @@ translate([0,0,20]){
     translate([tk+11,depth,tk+10]){
       color("red")cube([3,tk+3,8]);
     }
+    // sd card window
+    translate([2,-1,10]){
+      cube([2,4,12]);
+    }
     // side cooling holes  
     for(i=[0:2]) {
       translate([tk+5, -tk, 5+i*3]){
