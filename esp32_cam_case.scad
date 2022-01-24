@@ -63,7 +63,7 @@ translate([0,0,20]){
     }
   }
   // mounting joint
-  translate([5,12.5,-20]){
+  translate([3,16,-20]){
     $fn=100;
     // joint
     difference(){
