@@ -21,7 +21,12 @@ translate([0,0,20]){
       color("red")cube([4, 9, 9]);
     }
     // flash window
-    translate([-1, tk+27,tk]) {
+    translate([-6.5, tk+29.5,tk+3]) {
+      //color("red")cube([tk+2, 3, 3]);
+      $fn=100;
+      sphere(d=16);
+    }
+    translate([-1, tk+28,tk+1]) {
       color("red")cube([tk+2, 3, 3]);
     }
     // micro usb window
