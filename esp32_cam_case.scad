@@ -53,7 +53,7 @@ translate([0,0,20]){
   }
   // cam extension
   translate([-4, tk+5+4.5, tk+9+4.5]) {
-    $fn=100;
+    $fn=150;
     rotate([0,90,0])
     difference(){
       color("red")cylinder(h=6,d=14);
@@ -64,7 +64,7 @@ translate([0,0,20]){
   }
   // mounting joint
   translate([3,16,-20]){
-    $fn=100;
+    $fn=150;
     // joint
     difference(){
       translate([6,6,6]){
@@ -115,7 +115,7 @@ translate([60, 60,0]) {
 
 // mounting support base
 translate([100,0,0]) {
-  $fn=100;
+  $fn=150;
   translate([12.5,25,0]){  
     cylinder(d=5, h=20);
   }
@@ -131,7 +131,7 @@ translate([100,0,0]) {
 }
 
 // lock ring
-$fn=100;
+$fn=150;
 difference(){
   translate([0, -20, 0])cylinder(d=14,h=3);
   translate([0, -20, -1])cylinder(d=12,h=5);
