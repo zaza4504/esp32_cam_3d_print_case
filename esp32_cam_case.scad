@@ -114,7 +114,7 @@ translate([60, 60,0]) {
   cube([tk, depth+tk*2, heigtht+tk*2]);
   difference(){
     translate([tk, tk, tk]) {
-      color("green")cube([1, depth, heigtht]);
+      color("green")cube([2, depth, heigtht]);
     }
     translate([tk-1, tk+1,tk+1]) {
       color("red")cube([4, depth-2, heigtht-2]);
