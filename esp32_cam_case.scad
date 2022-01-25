@@ -30,7 +30,7 @@ translate([0,0,20]){
       color("red")cube([tk+2, 3, 3]);
     }
     // micro usb window
-    translate([tk+11,depth,tk+10]){
+    translate([tk+11,depth,tk+11]){
       color("red")cube([3,tk+3,8]);
     }
     // sd card window
