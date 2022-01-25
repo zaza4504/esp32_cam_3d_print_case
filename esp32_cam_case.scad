@@ -93,7 +93,7 @@ translate([0,0,20]){
     // ring locker
     difference(){
       translate([6,6,3]){
-        color("green")cylinder(d=12, h=1);
+        color("green")cylinder(d=13, h=1);
       }
       translate([6,6,2]){
         color("red")cylinder(d=10, h=3);
