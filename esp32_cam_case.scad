@@ -142,6 +142,6 @@ translate([100,0,0]) {
 // lock ring
 $fn=150;
 difference(){
-  translate([0, -20, 0])cylinder(d=14,h=3);
-  translate([0, -20, -1])cylinder(d=12,h=5);
+  translate([0, -20, 0])cylinder(d=14,h=4);
+  translate([0, -20, -1])cylinder(d=11.8,h=6);
 }
