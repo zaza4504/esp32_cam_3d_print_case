@@ -109,6 +109,47 @@ translate([0,0,20]){
   }
 }
 
+// seconde joint
+translate([40,0,0]){
+  $fn=150;
+  // joint
+  difference(){
+    translate([6,6,6]){
+      difference(){
+      sphere(d=12);
+      color("red")sphere(d=10);}
+    }
+    color("green")cube([12,12,3]);
+    translate([6,16,6]){
+      rotate([90,90,0])color("blue")
+      cylinder(d=5,h=20);
+    }
+    translate([3.5,-4,1]){
+      color("red")cube([5,20,5]);
+    }
+  }
+  // ring locker
+  difference(){
+    translate([6,6,3]){
+      color("green")cylinder(d=13, h=1);
+    }
+    translate([6,6,2]){
+      color("red")cylinder(d=10, h=3);
+    }
+    translate([3.5,-4,2]){
+      color("blue")cube([5,20,3]);    
+    }
+  }
+  // stick
+  translate([6,6,11]){
+    cylinder(d=5, h=10);
+  }
+  
+  translate([6,6,25]){
+    sphere(d=10);
+  }
+}
+
 // back cover
 translate([60, 60,0]) {
   cube([tk, depth+tk*2, heigtht+tk*2]);
@@ -139,9 +180,15 @@ translate([100,0,0]) {
   }
 }
 
-// lock ring
+// lock ring A
 $fn=150;
 difference(){
   translate([0, -20, 0])cylinder(d=14,h=4);
   translate([0, -20, -1])cylinder(d=11.8,h=6);
+}
+
+// lock ring B
+difference(){
+  translate([20, -20, 0])cylinder(d=14,h=4);
+  translate([20, -20, -1])cylinder(d=11.8,h=6);
 }
